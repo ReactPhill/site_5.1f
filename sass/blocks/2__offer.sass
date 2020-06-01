@@ -1,0 +1,34 @@
+@import ../src__sass/mixins
+
+.offer
+    background-image: url('/img/1_Offer/Offer.jpg')
+    background-color: #ebecee 
+    background-repeat: no-repeat
+    background-position: right top
+
+    height: 91.5vh
+    max-height: 665px
+
+    padding: 15vh
+
+    display: flex
+    
+
+.offer__block
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+.title
+        margin-bottom: 3rem 
+        +offer_title
+       
+        
+.main-btn
+    text-decoration: none
+    +main_btn
+    &:hover
+        +main_btn_hover
+
+    
