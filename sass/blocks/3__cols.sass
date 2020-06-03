@@ -1,0 +1,42 @@
+@import ../src__sass/mixins
+
+.cols__body 
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    text-align: center  
+    
+
+.cols__titlle
+    +cols_h2
+.cols__p
+    +cols_p
+.cols 
+    display: flex
+    flex-wrap: wrap
+.cols__card
+    text-align: start
+    .h3__card
+        margin: 1rem 0
+        +cols_card_h3
+    .p__card
+        +cols_card_p
+
+.img_card 
+    overflow: hidden
+.img_card img
+    width: 100%
+    height: 100%
+
+.img_card:hover img
+    transform: scale(1.1)
+    transition: .5s
+
+
+       
+        
+        
+    
+
+        

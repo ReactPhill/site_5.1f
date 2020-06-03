@@ -6,16 +6,21 @@
     align-items: center
     padding: 0 2rem
 
+    height: 92px
+
     +header_bgc
-.navbar
+
+.header__menu
+    
+
+.header__list
     display: flex
     justify-content: center
     align-items: center
-
     li
+        margin: 0 1rem
         list-style-type: none
         a
-            margin: 0 1rem
             +nav_link
         
 .link__btn
@@ -31,5 +36,80 @@
         color:#ffffff
 
 @media ( max-width: 1024px  )
-    
+    .header
+        .showBurger
+            display: block
+    .burger
+        display: flex
+        justify-content: center
+        align-items: center
         
+        width: 50px
+        height: 50px
+        background: #ffffff
+        border-radius: 10px 
+        
+        i
+            display: block
+            background: #333333
+            border-radius: 10px
+            width: 40px
+            height: 3px
+            margin: 8px
+            opacity: 1
+
+    .burger:hover
+        background: #333333
+        transition: .5s
+
+        .line1
+            background: #ffffff
+            border-radius: 30px
+            transition: .5s
+
+        .line1
+            background: #ffffff
+            transform: translateY(10px)
+            transition: .2s
+    
+        .line3
+            background: #ffffff
+            transition: .2s
+            transform: translateY(-12px)
+
+    .burger:active
+        background: #333333
+        transition: .2s
+
+        .line1
+            transform: rotate(45deg)
+            transition: .2s
+            position: relative
+            bottom: -10px
+    
+        .line2
+            opacity: 0
+            transition: .2s
+        .line3
+            transform: rotate(-45deg)
+            transition: .2s
+            position: relative
+            bottom: 12px
+            
+
+        
+           
+
+       
+
+
+
+            
+            
+
+        
+
+            
+            
+
+   
