@@ -357,6 +357,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 0;
 }
 .header__list li {
   margin: 0 1rem;
@@ -392,7 +393,11 @@ textarea {
 }
 
 @media (max-width: 1024px) {
-  .header .showBurger {
+  .header__menu {
+    display: none;
+  }
+
+  .openBurger {
     display: block;
   }
 

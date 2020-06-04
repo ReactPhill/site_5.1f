@@ -10,13 +10,12 @@
 
     +header_bgc
 
-.header__menu
-    
-
 .header__list
     display: flex
     justify-content: center
     align-items: center
+    padding-left: 0
+
     li
         margin: 0 1rem
         list-style-type: none
@@ -36,9 +35,11 @@
         color:#ffffff
 
 @media ( max-width: 1024px  )
-    .header
-        .showBurger
-            display: block
+    .header__menu
+        display: none
+    .openBurger
+        display: block
+            
     .burger
         display: flex
         justify-content: center
@@ -95,6 +96,14 @@
             transition: .2s
             position: relative
             bottom: 12px
+
+// menu burger min-width 1024px
+    
+        
+    
+       
+
+
             
 
         
