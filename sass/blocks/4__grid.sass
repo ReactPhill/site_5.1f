@@ -1,1 +1,64 @@
 @import ../src__sass/mixins
+
+// grid //
+
+.grid
+    display: grid
+    
+    margin: 80px 0
+
+.grid__body
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+// grid__content //
+
+.grid__content
+    display: flex
+    justify-content: center
+    align-items: center
+    
+    width: 640px
+    height: 400px
+    
+// grid__block //
+
+.grid__block
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+
+.grid__h2
+    +grid__h2 
+.grid__line
+    +grid__line
+.grid__h3
+    +grid__h3
+
+.grid__content__1
+    background: #f8f8f8
+.grid__content__2
+    background: #d2d6d9
+.grid__content__3
+    background: #f8f8f8
+.grid__content__4
+    background: #d2d6d9
+.grid__content__5
+    background: #f8f8f8
+.grid__content__6
+    background: #1c1c1c
+.grid__content__7
+    background: #f4f0eb
+.grid__content__8
+    background: #f4f0eb
+.grid__content__9
+    background: #1c1c1c
+    .grid__h2
+        color: #ffffff
+    .grid__line
+        background: #ffffff
+    .grid__h3
+        color: #ffffff
+    
+    
