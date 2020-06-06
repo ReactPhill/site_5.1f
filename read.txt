@@ -6,10 +6,15 @@
 ---
 [sass -> blocks]
 ---
+
+@import ./src__sass/reset
 @import ./blocks/0__body
 
 @import ./blocks/1__header
 @import ./blocks/2__offer
+@import ./blocks/3__cols
+@import ./blocks/4__grid
+@import ./blocks/5__devices
 
 []
 ---
