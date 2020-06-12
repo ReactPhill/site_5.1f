@@ -1,0 +1,70 @@
+@import ../src__sass/mixins
+
+.stats 
+    background-image: url('/img/5_Stats/bgc-stats.jpg')
+    background-repeat: no-repeat
+    background-position: center
+
+    height: auto
+    
+    display: flex
+    align-items: center
+
+.stats__body
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    
+    text-align: center
+    margin: 15rem 0
+
+.stats_h1
+    margin: 0 0 3rem 0
+    +stats_h1 
+
+.stats__blocks 
+    display: flex
+    justify-content: center
+    align-items: center
+
+.stats__line
+    display: block
+    background: #ffffff
+    opacity: .2
+    
+    height: 23rem
+    width: 1px
+
+    margin: 0 2.5rem
+    
+
+.stats__block 
+
+.stats_price
+    margin: 0 0 3rem 0
+    +stats_price
+
+.stats_info
+    margin: 0 0 3rem 0
+    +stats_info
+
+.stats_text 
+    margin: 0 0 3rem 0
+    +stats_text
+
+.stats_btn
+    display: flex
+    justify-content: center
+    align-items: center
+
+.stats_link
+    display: flex
+    justify-content: center
+    align-items: center
+    text-decoration: none
+    +stats_btn_a
+
+    &:hover
+        transition: .5s
+        +stats_btn_hover

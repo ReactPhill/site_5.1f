@@ -1,0 +1,91 @@
+@import ../src__sass/mixins
+
+.brand 
+    margin: 0 0 80px 0
+
+.container 
+
+.brand__body 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    text-align: center
+
+.brand__block-1
+    margin: 0 0 70px 0
+
+.brand_title 
+    +brand_title
+
+.brand__block-2
+    margin-bottom: 50px
+
+.slider__container
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 130px
+   
+.slider__item 
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 20px
+    img
+        height: 120px
+        width: 120px
+        
+        transition: .5s
+        transition-delay: .1s
+        opacity: .3
+
+.item-active
+    img
+        width: 120px
+        opacity: 1
+
+
+.brand__block-3
+    margin: 0 0 40px 0
+.brand_text 
+    +brand_text
+
+.brand__block-4
+    align-self: self-start
+    margin: 0 0 40px 23%
+.brand_by
+    display: flex
+    flex-direction: column
+    align-items: start
+    .brand_autor
+        +brand_by
+        margin: 0 0 10px 0
+    .brand_ink
+        +brand_ink
+
+.brand__block-5
+
+.body__controllers
+    display: flex
+    button
+        font-size: 2rem
+        border: none
+        background: none
+        outline: none
+        opacity: .7
+        cursor: pointer
+
+        &:hover
+            transition: .5s
+            opacity: 1
+        &:active
+            transform: scale(1.1)
+
+            
+.controller__left
+    margin-right: 10px
+        
+.controller__right
+    margin-left: 10px
