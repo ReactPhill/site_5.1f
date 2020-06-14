@@ -34,12 +34,37 @@
         background: #333333
         color:#ffffff
 
-@media ( max-width: 1024px  )
+@media ( max-width: 414px  )
     .header__menu
         display: none
     .openBurger
         display: block
-            
+    .burger
+        
+    .header__list 
+        position: relative
+        top: 4rem
+        flex-direction: column
+        background: #333333
+        width: 12rem
+        height: 15rem
+        border-radius: 0 0 1rem 1rem
+        li
+            margin: 10px 0
+            a
+                opacity: .7
+                color: #fff      
+    .link:hover
+        transition: .2s
+        opacity: 1
+
+    .link__btn
+        display: inline-flex
+        text-align: center
+        
+        height: 0
+    
+                
     .burger
         display: flex
         justify-content: center
@@ -97,6 +122,9 @@
             position: relative
             bottom: 12px
 
+@media ( max-width: 320px  )
+    .header__list 
+        width: 7rem
 
     
         

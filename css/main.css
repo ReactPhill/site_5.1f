@@ -392,13 +392,41 @@ textarea {
   color: #ffffff;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 414px) {
   .header__menu {
     display: none;
   }
 
   .openBurger {
     display: block;
+  }
+
+  .header__list {
+    position: relative;
+    top: 4rem;
+    flex-direction: column;
+    background: #333333;
+    width: 12rem;
+    height: 15rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+  .header__list li {
+    margin: 10px 0;
+  }
+  .header__list li a {
+    opacity: 0.7;
+    color: #fff;
+  }
+
+  .link:hover {
+    transition: 0.2s;
+    opacity: 1;
+  }
+
+  .link__btn {
+    display: inline-flex;
+    text-align: center;
+    height: 0;
   }
 
   .burger {
@@ -459,6 +487,11 @@ textarea {
     transition: 0.2s;
     position: relative;
     bottom: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .header__list {
+    width: 7rem;
   }
 }
 .offer {
@@ -528,6 +561,11 @@ textarea {
   }
 }
 @media screen and (max-width: 320px) {
+  .offer {
+    background-position: 57%;
+    min-height: 588px;
+  }
+
   .title {
     font-size: 50px;
   }
@@ -904,6 +942,11 @@ textarea {
   transition-duration: 0.3s;
 }
 
+@media screen and (max-width: 1440px) {
+  .tablet__front img {
+    width: 55em;
+  }
+}
 @media screen and (max-width: 768px) {
   .tablet__front img {
     width: 45em;
@@ -911,15 +954,26 @@ textarea {
 
   .blog__block {
     display: flex;
+    flex-flow: wrap;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 414px) {
+  .tablet__front {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
   .tablet__front img {
-    width: 25em;
+    width: 22em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .tablet__front img {
+    width: 20em;
   }
 
   .blog__block {
-    flex-direction: column;
+    display: flex;
   }
 }
 .stats {
@@ -1623,6 +1677,16 @@ textarea {
     margin: 0 0 20px 0;
   }
 }
+@media screen and (max-width: 414px) {
+  .slider__item img {
+    height: 68px;
+    width: 50px;
+  }
+
+  .brand__block-3 {
+    margin: 0 5px 40px 5px;
+  }
+}
 .footer {
   background: #0d0d0d;
   background-position: center;
@@ -1811,7 +1875,4 @@ textarea {
     background-position: 35% 40%;
     background-size: 300px 310px;
   }
-}
-.tablet__front img {
-  width: 20em;
 }
