@@ -12,7 +12,7 @@
 
     display: grid
     grid-template: repeat(3, 400px) / repeat(3, 640px)
-    grid-template-areas: ". photo1 ." "photo2 . photo3" ". photo4 photo3" 
+    grid-template-areas: "gc1 photo1 gc3" "photo2 gc5 photo3" "gc7 photo4 photo3" 
     
 // grid__content //
 
@@ -37,28 +37,41 @@
 
 .grid__content__1
     background: #f8f8f8
+    grid-area: gc1
 .grid__content__2
     background: #d2d6d9 url('/img/3_Grid/grid__2.jpg')
+    background-position: center
+    background-repeat: no-repeat
     grid-area: photo1
 .grid__content__3
     background: #f8f8f8
+    grid-area: gc3
 .grid__content__4
     background: #d2d6d9 url('/img/3_Grid/grid__4.jpg')
+    background-position: center
+    background-repeat: no-repeat
     grid-area: photo2
 .grid__content__5
     background: #f8f8f8
+    grid-area: gc5
 .grid__content__6
     background: #1c1c1c url('/img/3_Grid/grid__9.jpg')
+    background-position: center
+    background-repeat: no-repeat
     grid-area: photo3
 .grid__content__7
     background: #f4f0eb 
+    grid-area: gc7
 .grid__content__8
     background: #f4f0eb url('/img/3_Grid/grid__7.jpg')
+    background-position: center
+    background-repeat: no-repeat
     grid-area: photo4
 .grid__content__9
+    grid-area: gc9
+    grid-area: photo3 
     .grid__block
         margin-top: 60%
-    grid-area: photo3 
     .grid__h2
         color: #ffffff
     .grid__line
@@ -66,4 +79,30 @@
     .grid__h3
         color: #ffffff
     
-    
+@media screen and ( max-width: 2560px )
+
+@media screen and ( max-width: 1840px )
+    .grid__body
+        display: grid
+        grid-template: repeat(6, 300px) / repeat(2, 440px)
+        grid-template-areas: "gc1 photo1" "photo2 gc3" "photo3 gc3" "photo3 gc3" "gc7 photo4" "gc5 gc5"
+
+
+@media screen and ( max-width: 768px )
+    .grid__body
+        grid-template: repeat(6, 250px) / repeat(2, 320px)
+
+    .grid__content__4
+        background-position: 25% -5%
+    .grid__content__6
+        background-position: 45% 25%
+
+@media screen and ( max-width: 414px )
+    .grid__body
+        grid-template: repeat(6, 150px) / repeat(2, 180px)
+
+@media screen and ( max-width: 320px )
+    .grid__body
+        grid-template: repeat(6, 120px) / repeat(2, 120px)
+
+        

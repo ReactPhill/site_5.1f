@@ -3,7 +3,6 @@
 .devices
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
     
     width: 100%
     margin: 0 0 80px 0
@@ -13,6 +12,9 @@
 
 .tablet__front
     display: block
+    width: 100%
+    img
+        width: 60em
 
 // mobile
 
@@ -22,9 +24,9 @@
     justify-content: center
     align-items: center
 
-    margin: 0 auto
-    max-width: 25em 
+    max-width: 22em 
     width: 100%
+    margin: 0 auto
 
 .mobile
     
@@ -59,3 +61,36 @@
     +project_btn
     &:hover
         +project_btn_hover
+
+@media screen and ( max-width: 1440px )
+    .tablet__front
+        img
+
+@media screen and ( max-width: 768px )
+    .tablet__front 
+        img
+            width: 45em
+    .blog__block
+        display: flex
+
+@media screen and ( max-width: 414px )
+    .tablet__front 
+        img
+            width: 25em
+            
+    .blog__block
+        flex-direction: column
+        
+        
+            
+            
+
+
+            
+
+            
+
+   
+       
+        
+    

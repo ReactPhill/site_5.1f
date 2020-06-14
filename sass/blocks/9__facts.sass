@@ -25,6 +25,7 @@
     display: flex
     justify-content: center
     align-items: center
+    flex-wrap: wrap
 
 .facts_price
     margin: 0 50px
@@ -44,3 +45,17 @@
 
 .facts_text 
     +facts_text
+
+
+@media screen and (max-width: 414px)
+    .facts_h1 
+        margin-bottom: 10px
+    .facts_price_cost
+        margin-bottom: 20px
+    .facts_price_text
+        margin: 0 0 10px 0
+
+    .facts_text
+        h3
+            margin: 0 30px
+        

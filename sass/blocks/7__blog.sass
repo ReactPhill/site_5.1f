@@ -34,7 +34,8 @@
     
     height: 600px
     width: 600px
-    margin-right: 1rem 
+
+    margin: 0 1rem 1rem 0
 
     .blog__body
         padding: 1rem
@@ -82,7 +83,7 @@
 .blog__info__trid
     background: url('/img/6_Blog/blog_4.jpg')
     background-repeat: no-repeat
-    background-position: center
+    background-position: center 
 
     display: block
     height: 203px
@@ -151,5 +152,41 @@
     &:hover
         transition: .5s
         +blog_link__hover
+
+@media screen and ( max-width: 1024px )
+    .blog__body
+        
+    .blog__info
+        display: flex
+        flex-wrap: wrap
+        
+    .blog__blocks
+        justify-content: center  
+        
+    .blog__info__fourth
+        margin: 0 1rem 0 0
+
+
+@media screen and ( max-width: 768px )
+
+        
+@media screen and ( max-width: 414px )
+    .blog__info__first
+        width: 370px
+
+        
+@media screen and ( max-width: 320px )
     
+    .blog__info__first 
+        width: 300px
+        margin: 0 0 1rem 0
+    .blog__info__second, .blog__info__trid, .blog__info__fourth, .blog__info__fifth
+        margin: 0
+    .grid__line
+        margin: 2px 0 5px 0
+    .grid__h2
+        font-size: 14px
+    .grid__h3
+        font-size: 9px
+
 
